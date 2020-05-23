@@ -1,3 +1,4 @@
+// TC: O(Nlog N) SC: O(1)
 class Solution {
 public:
     int minIncrementForUnique(vector<int>& A) {
