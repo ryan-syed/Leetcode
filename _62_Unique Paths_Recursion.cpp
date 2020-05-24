@@ -18,11 +18,6 @@ public:
     int uniquePaths(int m, int n) {
         arr = vector<int>(m * n, 0);
         int count = helper(m, n, 0, 0);
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < m; j++)
-                cout << arr[i * m + j] << " ";
-            cout << endl;
-        }
         return count;
     }
 };
