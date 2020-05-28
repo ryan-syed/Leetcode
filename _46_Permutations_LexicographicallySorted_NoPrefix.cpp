@@ -1,7 +1,10 @@
-#define what_is_array(x) for(auto elem : x) cout << elem << " "; cout << endl
-#define what_is(x) cout << #x << " is " << x << endl
-#define what_is_fn(fn, x) cout << #fn << "(" << #x << ")" << " is " << fn(x) << endl
-
+// why does this result in lexicographically sorted
+// [1 2 3]
+// [1 2 3]  --- first swap, zero pos
+// [2 1 3]  --- second swap, zero pos
+// [3 1 2]  --- third swap, zero pos
+// As we are always swapping with the just smaller element,
+// and therefore, the rest of the array will be sorted.
 class Solution {
 public: 
     void helper(vector<int> nums, vector<vector<int>> &result, int pos) {

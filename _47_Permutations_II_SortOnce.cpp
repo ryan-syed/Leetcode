@@ -1,4 +1,5 @@
 // why does this result in lexicographically sorted
+// say our elements are
 // [1 2 3]
 // [1 2 3]  --- first swap, zero pos
 // [2 1 3]  --- second swap, zero pos

@@ -1,3 +1,5 @@
+// This is the fastest solution with time complexity of O(n! * n)
+
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
